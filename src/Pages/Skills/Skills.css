@@ -1,0 +1,54 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.centered-box {
+    width: 100%; 
+    max-width: 26rem;
+    height: 30rem; 
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    text-align: center; 
+    overflow: auto; 
+    margin-top: 8rem;
+}
+
+
+.centered-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.centered-box p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.skills__container, .tools {
+    margin-top: 20px;
+}
+
+.skills__container h3, .tools h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills__container span, .tools span {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #333;
+}
+
+
+

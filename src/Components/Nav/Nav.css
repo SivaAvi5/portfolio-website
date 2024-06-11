@@ -1,0 +1,33 @@
+.nav{
+    padding: 1rem;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+
+}
+.nav__btns{
+    display: flex;
+    gap: 2rem;
+}
+.links{
+    text-decoration: none;
+    color: inherit;
+}
+
+.links:hover{
+    color: rgb(203, 193, 193);
+    text-decoration: underline;
+}
+
+img{
+   width: 2rem;
+   height: 2rem;
+   margin-left: 1rem;
+}

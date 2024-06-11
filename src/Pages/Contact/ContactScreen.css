@@ -1,0 +1,61 @@
+
+.contact__screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Add some padding to prevent text from touching the edges */
+}
+
+/* Contact box styling */
+.contact__box {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form styling */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__form label {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.contact__form input,
+.contact__form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact__form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact__form .send__mail {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #111;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact__form .send__mail:hover {
+    background-color: #333;
+}
