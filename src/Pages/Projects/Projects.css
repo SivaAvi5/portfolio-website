@@ -1,9 +1,11 @@
 
-.project__card__center{
+.project__card__center {
   display: flex;
   justify-content: center;
-  height: 100vh;
   align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  padding: 20px;
 }
 
 .project__card {
@@ -18,8 +20,11 @@
   border-radius: 10px;
   text-align: center;
   padding: 20px;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.project__card h2{
+
+.project__card h2 {
   margin-bottom: 1rem;
 }
 
@@ -30,7 +35,6 @@
   width: 240px;
   border-radius: 5px;
 }
-
 
 .project__card button {
   margin-top: 20px;
@@ -46,8 +50,31 @@
 .project__card button a {
   color: white;
   text-decoration: none;
+  display: flex;
+  gap: .2rem;
 }
 
 .project__card button:hover {
   background-color: #333;
+}
+
+@media (max-width: 480px) {
+  .project__card {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .project__card h2 {
+    font-size: 1.5rem;
+  }
+
+  .project__card button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .project__card img {
+    width: 100%;
+    height: auto;
+  }
 }

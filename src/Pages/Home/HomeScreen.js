@@ -12,9 +12,9 @@ const HomeScreen = () => {
           <h2> I'm Siva</h2>
           <h3>Front-End web developer</h3>
           <p>
-            I'm eager to contribute to exciting projects and collaborate with
-            other developers to bring innovative ideas to life. Let's build
-            something great together!
+            Crafting visually appealing and user-friendly web experiences using
+            cutting-edge technologies. Transforming ideas into interactive
+            digital solutions.
           </p>
         </div>
       </div>
@@ -38,6 +38,12 @@ const HomeScreen = () => {
           <FaLinkedin />
           LinkedIn
         </a>
+      </div>
+      <div className="snake-container">
+        <div className="snake-line"></div>
+        <div className="snake-line"></div>
+        <div className="snake-line"></div>
+        <div className="snake-line"></div>
       </div>
     </div>
   );
