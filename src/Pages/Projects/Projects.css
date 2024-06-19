@@ -35,6 +35,13 @@
   width: 240px;
   border-radius: 5px;
 }
+.project__card .btn{
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+ 
+}
 
 .project__card button {
   margin-top: 20px;
@@ -45,6 +52,7 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
+  display: flex;
 }
 
 .project__card button a {
