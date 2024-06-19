@@ -10,12 +10,14 @@ const Projects = () => {
       id: "1",
       name: "Netflix-clone",
       img: netflixCard,
+      url:'https://gold-gym-siva-dev.netlify.app/',
       githubLink: "https://github.com/SivaAvi5/netflix-clone",
     },
     {
       id: "2",
       name: "Fitness-web-app",
       img: fitnessCard,
+      url:"https://gold-gym-siva-dev.netlify.app/",
       githubLink: "https://github.com/SivaAvi5/fitness-app",
     },
   ];
@@ -30,7 +32,7 @@ const Projects = () => {
           </p>
           <div className="btn">
             <button>
-              <a href={project.githubLink}>Link</a>
+              <a href={project.url}>Link</a>
             </button>
             <button>
               <a href={project.githubLink}>
