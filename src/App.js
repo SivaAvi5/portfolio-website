@@ -4,7 +4,7 @@ import ContactScreen from "./Pages/Contact/ContactScreen";
 import HomeScreen from "./Pages/Home/HomeScreen";
 import Projects from "./Pages/Projects/Projects";
 import Skills from "./Pages/Skills/Skills";
-import { BrowserRouter as router, Route, Routes } from "react-router-dom";
+import { Routes,Route} from "react-router-dom";
 
 function App() {
   return (

@@ -26,7 +26,7 @@ const Projects = () => {
         <div className="project__card" key={project.id}>
           <h2>{project.name}</h2>
           <p className="project__img">
-            <img src={project.img}></img>
+            <img src={project.img} alt={project.name}></img>
           </p>
           <div className="btn">
             <button>
