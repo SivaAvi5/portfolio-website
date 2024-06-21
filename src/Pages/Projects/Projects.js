@@ -10,14 +10,14 @@ const Projects = () => {
       id: "1",
       name: "Netflix-clone",
       img: netflixCard,
-      url:'https://gold-gym-siva-dev.netlify.app/',
-      githubLink: "https://github.com/SivaAvi5/netflix-clone",
+      url:'https://66757f6f7ffbc48b86e23ac3--sage-tanuki-21f0ba.netlify.app/',
+      githubLink: "https://github.com/SivaAvi5/netflixclone",
     },
     {
       id: "2",
       name: "Fitness-web-app",
       img: fitnessCard,
-      url:"https://gold-gym-siva-dev.netlify.app/",
+      url:"https://sivagoldsgym.netlify.app/",
       githubLink: "https://github.com/SivaAvi5/fitness-app",
     },
   ];
