@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "./HomeScreen.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
