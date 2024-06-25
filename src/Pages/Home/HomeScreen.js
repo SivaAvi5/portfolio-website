@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HomeScreen.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -38,12 +38,6 @@ const HomeScreen = () => {
           <FaLinkedin />
           LinkedIn
         </a>
-      </div>
-      <div className="snake-container">
-        <div className="snake-line"></div>
-        <div className="snake-line"></div>
-        <div className="snake-line"></div>
-        <div className="snake-line"></div>
       </div>
     </div>
   );

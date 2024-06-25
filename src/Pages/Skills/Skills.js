@@ -7,13 +7,7 @@ const Skills = () => {
       <div className="centered-box">
         <h2>Frontend Developer</h2>
         <p>
-          Bringing new concepts to life is my passion. As a frontend developer,
-          I feel privileged to create interfaces that directly enhance user
-          experiences. I thrive on the challenge of turning complex problems
-          into intuitive, beautiful, and functional designs. With each project,
-          I aim to make a positive impact on the users' daily lives through
-          meticulous attention to detail and a deep understanding of modern web
-          technologies.
+        Creating new concepts is my passion. As a frontend developer, I enjoy crafting interfaces that improve user experiences. I turn complex problems into intuitive, beautiful, and functional designs. Each project is an opportunity to positively impact users through attention to detail and a strong grasp of modern web technologies.
         </p>
         <div className="skills__container">
           <h3>Skills</h3>
