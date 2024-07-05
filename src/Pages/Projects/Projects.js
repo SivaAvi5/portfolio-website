@@ -3,6 +3,7 @@ import "./Projects.css";
 import { FaGithub } from "react-icons/fa";
 import netflixCard from "../../images/netflixCard.jpg";
 import fitnessCard from "../../images/fitnessCard.jpg";
+import whatsappCard from "../../images/Whatsapp.webp"
 
 const Projects = () => {
   const projects = [
@@ -20,6 +21,14 @@ const Projects = () => {
       url:"https://sivagoldsgym.netlify.app/",
       githubLink: "https://github.com/SivaAvi5/fitness-app",
     },
+    {
+      id: "3",
+      name: "Whatsapp-clone",
+      img: whatsappCard,
+      url:"https://sivawhatsappclone.web.app/",
+      githubLink: "https://github.com/SivaAvi5/whatsappclone",
+    },
+
   ];
 
   return (
