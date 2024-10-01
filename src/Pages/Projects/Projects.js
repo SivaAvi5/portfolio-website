@@ -11,7 +11,7 @@ const Projects = () => {
       id: "1",
       name: "Netflix-clone",
       img: netflixCard,
-      url:'https://66757f6f7ffbc48b86e23ac3--sage-tanuki-21f0ba.netlify.app/',
+      url:'https://sage-tanuki-21f0ba.netlify.app/',
       githubLink: "https://github.com/SivaAvi5/netflixclone",
     },
     {
