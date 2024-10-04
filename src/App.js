@@ -1,28 +1,44 @@
-import { CSSTransition, SwitchTransition } from "react-transition-group";
 import "./App.css";
-import "./transitions.css";
 import Nav from "./Components/Nav/Nav";
 import ContactScreen from "./Pages/Contact/ContactScreen";
 import HomeScreen from "./Pages/Home/HomeScreen";
 import Projects from "./Pages/Projects/Projects";
 import Skills from "./Pages/Skills/Skills";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { useRef } from "react";
+import ParticlesBackground from "./Components/Nav/ParticlesBackground";
 
 function App() {
-  const location = useLocation();
+  const homeRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="app">
-      <Nav />
-      <SwitchTransition>
-        <CSSTransition key={location.key} classNames="slide" timeout={500}>
-          <Routes location={location}>
-            <Route path="/" element={<HomeScreen />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<ContactScreen />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </CSSTransition>
-      </SwitchTransition>
+      <ParticlesBackground />
+
+      <Nav
+        homeRef={homeRef}
+        skillsRef={skillsRef}
+        projectRef={projectRef}
+        contactRef={contactRef}
+        scrollToSection={scrollToSection}
+      />
+      <div className="screen">
+        <div className="pages">
+          <HomeScreen homeRef={homeRef} />
+          <Skills skillsRef={skillsRef} />
+          <Projects projectRef={projectRef} />
+          <ContactScreen contactRef={contactRef} />
+        </div>
+      </div>
     </div>
   );
 }

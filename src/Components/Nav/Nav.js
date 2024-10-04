@@ -1,38 +1,38 @@
 import React, { useState } from "react";
 import "./Nav.css";
-import { NavLink } from "react-router-dom";
 import Logo from "../../logo/logo.png";
 import { HiMenuAlt1 } from "react-icons/hi";
-import { GrFormClose } from "react-icons/gr"
+import { GrFormClose } from "react-icons/gr";
 
-const Nav = () => {
+const Nav = ({homeRef,skillsRef,projectRef,contactRef,scrollToSection}) => {
   const [isOpen, setIsOpen] = useState(false);
-
 
   return (
     <div className="nav">
       <div className="nav__container">
-        <NavLink to="/" className="links" activeClassName="active">
-          <img src={Logo} alt="logo" />
-        </NavLink>
+        <img onClick={() => scrollToSection(homeRef)} className="links" activeclassname="active" src={Logo} alt="logo" />
+
         <div className={`nav__btns ${isOpen ? "open" : ""}`}>
-          <NavLink exact to="/" className="links" activeClassName="active">
-            <span>Home</span>
-          </NavLink>
-          <NavLink to="/skills" className="links" activeClassName="active">
-            <span>Skills</span>
-          </NavLink>
-          <NavLink to="/projects" className="links" activeClassName="active">
-            <span>Projects</span>
-          </NavLink>
-          <NavLink to="/contact" className="links" activeClassName="active">
-            <span>Contact</span>
-          </NavLink>
+          <span onClick={() => scrollToSection(homeRef)} className="links" activeclassname="active">
+            Home
+          </span>
+
+          <span onClick={() => scrollToSection(skillsRef)} className="links" activeclassname="active">
+            Skills
+          </span>
+
+          <span onClick={() => scrollToSection(projectRef)} className="links" activeclassname="active">
+            Projects
+          </span>
+
+          <span onClick={() => scrollToSection(contactRef)} className="links" activeclassname="active">
+            Contact
+          </span>
         </div>
         {isOpen ? (
           <GrFormClose className="burger" onClick={() => setIsOpen(false)} />
         ) : (
-            <HiMenuAlt1 className="burger" onClick={() => setIsOpen(true)}/>
+          <HiMenuAlt1 className="burger" onClick={() => setIsOpen(true)} />
         )}
       </div>
     </div>

@@ -1,52 +1,89 @@
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 93vh;
 }
 
-.centered-box {
-    width: 100%; 
-    max-width: 26rem;
-    height: 28rem; 
-    background-color: rgba(255, 255, 255, .9);
+.skills__container > h2 {
+  font-size: 24px;
+  color: white;
+  border-bottom: 4px solid rgb(219 39 119);
+  margin-top: 1rem;
+}
+
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    align-items: center;  
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px; 
-    text-align: center; 
-    overflow: auto; 
-}
+    margin-top: -4rem;
+  }
 
-
-.centered-box h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-.centered-box p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.skills__container, .tools {
-    margin-top: 20px;
-}
-
-.skills__container h3, .tools h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.skills__container span, .tools span {
+  .skills__center{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: #333;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 200px;
+  height: 140px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: white;
+  color: #111;
 }
 
+.card svg {
+  margin-bottom: 5px;
+}
 
+.card:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+  }
 
+  svg {
+    transition: transform 0.3s ease-in-out;
+  }
+  svg:hover {
+    transform: rotate(360deg);
+  }
+
+@media (max-width: 768px) {
+  .centered-box p {
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills{
+    margin-top: 0;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .card{
+    width: 180px;
+    height: 120px;
+  }
+
+}
+
+@media(max-width: 576px){
+    .card{
+        width: 140px;
+        height: 100px;
+      }
+      .skills{
+        margin-top: 0;
+      }
+}

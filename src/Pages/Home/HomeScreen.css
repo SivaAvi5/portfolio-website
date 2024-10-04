@@ -1,86 +1,150 @@
-
 .home__screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 93vh;
+  padding: 20px;
 }
-
 
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, .9); 
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px; 
-}
-
-.hero__section {
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  gap: 2rem;
+  color: white;
 }
 
 .hero__section h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: rgb(219 39 119);
 }
 
+.hi__container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.hi{
+    margin-left: 1rem;
+    transition: transform 0.1s ease-in-out;
+  }
+  .hi:hover {
+    transform: rotate(15deg);
+  }
+
+
 .hero__section h2 {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
 }
 
 .hero__section h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 .hero__section p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
 }
 
-/* Styling for buttons */
 .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    gap: .4rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  gap: 0.4rem;
+  cursor: pointer;
 }
 
 .btn-github {
-    background-color: #111;
+  background-color: white;
+  color: black;
 }
 
 .btn-github:hover {
-    background-color: #333;
+  background-color: #f2f2f2;
 }
 
 .btn-linkedin {
-    background-color: #0077b5;
+  background-color: #0077b5;
 }
 
 .btn-linkedin:hover {
-    background-color: #005582;
+  background-color: #005582;
+}
+
+.home__lottie {
+  width: 400px;
+}
+
+@media (max-width: 1200px) {
+  .home__screen {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home__screen {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .hero {
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .home__lottie {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__screen {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .hero {
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .hero__section h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero__section h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero__section h3 {
+    font-size: 1.6rem;
+  }
+
+  .home__lottie {
+    width: 300px;
+  }
 }

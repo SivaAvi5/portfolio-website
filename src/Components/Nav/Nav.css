@@ -1,37 +1,44 @@
 .nav {
     padding: 1rem;
-    background-color: #111;
+    background-color: #1f223a;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 100; 
+    display: flex;
+    justify-content: center;
 }
+
 .nav__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #ffffff;
     position: relative;
+    width: 90%;
 }
+
 .nav__btns {
     display: flex;
     gap: 2rem;
 }
+
 .links {
     text-decoration: none;
-    color: rgb(203, 193, 193);
+    color: white;
 }
+
 .links:hover {
     color: rgb(203, 193, 193);
     text-decoration: underline;
 }
-.active {
-    color: #ffffff;
-}
+
+
 img {
     width: 2rem;
     height: 2rem;
     margin-left: 1rem;
 }
+
 .burger {
     display: none;
     flex-direction: column;
@@ -41,7 +48,7 @@ img {
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 2;
+    z-index: 10; /* Adjusted */
 }
 
 @media (max-width: 768px) {
@@ -50,21 +57,20 @@ img {
         flex-direction: column;
         gap: 2rem;
         position: absolute;
-        top: 100%;
-        right: -3px;
-        top: -5px;
+        right: 0;
+        top: 100%; /* Positioned correctly */
         background-color: #111;
         width: 30%;
-        border-radius: .4rem;
+        border-radius: 0.4rem;
     }
-
 
     .nav__btns.open {
         display: flex;
         padding: 1.4rem;
-        margin-top: .4rem;
+        margin-top: 0.4rem;
         border: 1px solid gray;
     }
+
     .burger {
         display: flex;
     }
