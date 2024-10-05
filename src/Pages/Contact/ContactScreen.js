@@ -48,7 +48,7 @@ const ContactScreen = ({ contactRef }) => {
   return (
     <div ref={contactRef} className="contact">
       <h2>Contact</h2>
-      <p className="manual__email">manualy connect to us <a href="mailto:sivatamilarasan.dev@gmail.com">sivatamilarasan.dev@gmail</a></p>
+      {/* <p className="manual__email">manualy connect to us <a href="mailto:sivatamilarasan.dev@gmail.com">sivatamilarasan.dev@gmail</a></p> */}
       <div className="contact__screen">
         <div className="contact__box">
           <div className="contact__us">

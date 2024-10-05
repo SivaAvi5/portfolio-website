@@ -8,6 +8,25 @@
     justify-content: center;
 }
 
+.nav__progressbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.scroll-progress-tracking-container{
+    width: 100%;
+    height: 4px;
+    background: #1f223a;
+}
+
+.current-progress-bar{
+    height: 4px;
+    background: #0055ff;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
 .nav__container {
     display: flex;
     align-items: center;

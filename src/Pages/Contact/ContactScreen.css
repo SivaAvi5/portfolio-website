@@ -36,7 +36,7 @@
 
 .contact__screen {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -131,15 +131,15 @@
     .contact__box{
         width: 60vw;
     }
-    .contact__screen{
-        margin-top: 0;
-      }
-      .last__message{
+    /* .contact__screen{
+        margin-top: -8rem;
+      } */
+      /* .last__message{
         position: absolute;
         bottom: 27%;
         right: 50%;
         font-size: 2rem;
-      }
+      } */
     
 }
 
@@ -151,13 +151,17 @@
         font-size: 1rem;
       }
       .contact__screen{
-        margin-top: 0;
+        flex-direction: column;
+        margin-top: 1rem;
       }
-      .last__message{
+      /* .last__message{
         position: absolute;
         bottom: 27%;
         right: 50%;
         font-size: 1.8rem;
+      } */
+      .last__message{
+        margin-top: 0;
       }
 }
 
@@ -169,11 +173,15 @@
   .manual__email{
     font-size: 1.2rem;
   }
-  .last__message{
+  /* .last__message{
     position: absolute;
     bottom: 27%;
     right: 50%;
     font-size: 2rem;
+  } */
+  .contact__screen{
+    margin-top: 1rem;
+    flex-direction: column;
   }
 }
 
@@ -184,13 +192,17 @@
       .manual__email {
         font-size: 0.9rem;
       }
-
+      
       .last__message{
+        margin-bottom: 1rem;
+      }
+
+      /* .last__message{
         position: absolute;
         bottom: 27%;
         right: 45%;
         font-size: 1.5rem;
-      }
+      } */
 
 
 }
