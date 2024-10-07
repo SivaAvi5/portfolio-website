@@ -6,6 +6,7 @@
     z-index: 100; 
     display: flex;
     justify-content: center;
+
 }
 
 .nav__progressbar{
@@ -34,10 +35,12 @@
     color: #ffffff;
     position: relative;
     width: 90%;
+    padding: 0 20px
 }
 
 .nav__btns {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -70,6 +73,26 @@ img {
     z-index: 10; /* Adjusted */
 }
 
+.resume__btn{
+    padding: 10px 20px;
+    background-color: #0055ff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.resume__btn a{
+    text-decoration: none;
+    color: white;
+}
+.resume__btn:hover{
+    background-color: #003bb5;
+}
+
 @media (max-width: 768px) {
     .nav__btns {
         display: none;
@@ -81,6 +104,7 @@ img {
         background-color: #111;
         width: 30%;
         border-radius: 0.4rem;
+        align-items: flex-start;
     }
 
     .nav__btns.open {

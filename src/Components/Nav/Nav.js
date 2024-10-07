@@ -64,6 +64,9 @@ const Nav = ({
             >
               Contact
             </span>
+            <button className="resume__btn">
+              <a href="https://drive.google.com/file/d/13O1st0nDimanf3wEV6cyyjfTXV8w8_8W/view?usp=drive_link">Resume</a>
+            </button>
           </div>
           {isOpen ? (
             <GrFormClose className="burger" onClick={() => setIsOpen(false)} />
