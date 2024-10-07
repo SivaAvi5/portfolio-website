@@ -16,6 +16,12 @@ const Nav = ({
 
   return (
     <div className="nav__progressbar">
+      <div className="scroll-progress-tracking-container">
+        <div
+          className="current-progress-bar another"
+          style={{ width: `${scrollPercentage}%` }}
+        ></div>
+      </div>
       <div className="nav">
         <div className="nav__container">
           <img
@@ -65,13 +71,6 @@ const Nav = ({
             <HiMenuAlt1 className="burger" onClick={() => setIsOpen(true)} />
           )}
         </div>
-      </div>
-
-      <div className="scroll-progress-tracking-container">
-        <div
-          className="current-progress-bar"
-          style={{ width: `${scrollPercentage}%` }}
-        ></div>
       </div>
     </div>
   );
