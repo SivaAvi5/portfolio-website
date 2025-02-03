@@ -14,8 +14,6 @@ function App() {
   const contactRef = useRef(null);
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
-
-
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -49,12 +47,10 @@ function App() {
     };
   }, []);
 
- 
-
   return (
     <div className="app">
-      <ParticlesBackground />
-   
+      {/* <ParticlesBackground /> */}
+
       <Nav
         homeRef={homeRef}
         skillsRef={skillsRef}

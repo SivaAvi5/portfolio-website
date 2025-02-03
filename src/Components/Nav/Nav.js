@@ -16,12 +16,12 @@ const Nav = ({
 
   return (
     <div className="nav__progressbar">
-      <div className="scroll-progress-tracking-container">
+      {/* <div className="scroll-progress-tracking-container">
         <div
           className="current-progress-bar another"
           style={{ width: `${scrollPercentage}%` }}
         ></div>
-      </div>
+      </div> */}
       <div className="nav">
         <div className="nav__container">
           <img
@@ -65,7 +65,9 @@ const Nav = ({
               Contact
             </span>
             <button className="resume__btn">
-              <a href="https://drive.google.com/file/d/13O1st0nDimanf3wEV6cyyjfTXV8w8_8W/view?usp=drive_link">Resume</a>
+              <a href="https://drive.google.com/file/d/13O1st0nDimanf3wEV6cyyjfTXV8w8_8W/view?usp=drive_link">
+                Resume
+              </a>
             </button>
           </div>
           {isOpen ? (

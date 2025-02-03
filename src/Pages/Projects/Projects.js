@@ -3,12 +3,21 @@ import "./Projects.css";
 import { FaGithub } from "react-icons/fa";
 import netflixCard from "../../images/netflixCard.jpg";
 import fitnessCard from "../../images/fitnessCard.jpg";
-import whatsappCard from "../../images/Whatsapp.webp";
+import chatcard from "../../images/chatapp.jpg";
+import cryptocard from "../../images/crypto.png";
 
 const Projects = ({ projectRef }) => {
   const projects = [
     {
       id: "1",
+      name: "Crypto-Tracker",
+      img: cryptocard,
+      url: "https://cryptotracker229.netlify.app/",
+      githubLink: "https://github.com/SivaAvi5/CryptoTracker",
+      techs: ["React", "API", "MUI"],
+    },
+    {
+      id: "2",
       name: "Netflix-clone",
       img: netflixCard,
       url: "https://sage-tanuki-21f0ba.netlify.app/",
@@ -16,7 +25,7 @@ const Projects = ({ projectRef }) => {
       techs: ["React", "Redux", "API", "Firebase", "Stripe"],
     },
     {
-      id: "2",
+      id: "3",
       name: "Fitness-web-app",
       img: fitnessCard,
       url: "https://sivagoldsgym.netlify.app/",
@@ -24,9 +33,9 @@ const Projects = ({ projectRef }) => {
       techs: ["React", "MUI", "API", "Video"],
     },
     {
-      id: "3",
-      name: "Whatsapp-clone",
-      img: whatsappCard,
+      id: "4",
+      name: "Chat-web-app",
+      img: chatcard,
       url: "https://sivawhatsappclone.web.app/",
       githubLink: "https://github.com/SivaAvi5/whatsappclone",
       techs: ["React", "API", "Firebase", "context"],

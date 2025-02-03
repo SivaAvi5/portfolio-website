@@ -10,7 +10,8 @@
   font-size: 24px;
   color: white;
   border-bottom: 4px solid rgb(219 39 119);
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
 }
 
 .manual__email > a {
@@ -20,9 +21,9 @@
 }
 
 .manual__email {
-    margin-top: 1.6rem;
-    font-size: 1.4rem;
-    color: white;
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+  color: white;
 }
 
 .contact__desc {
@@ -40,9 +41,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
-  padding: 20px;
-  margin-top: -8rem;
+  /* margin-top: -8rem; */
 }
 
 /* Contact box styling */
@@ -62,9 +61,9 @@
 }
 
 .contact__box:hover {
-    transform: scale(1.05);
-    background-color: #f0f0f0;
-  }
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
 
 /* Form styling */
 .contact__form {
@@ -72,8 +71,6 @@
   flex-direction: column;
   gap: 10px;
 }
-
-
 
 .contact__form label {
   font-size: 16px;
@@ -115,63 +112,70 @@
   margin-left: 4rem;
 }
 
-.last__message{
-    margin-top: -8rem;
-    font-size: 2rem;
-    color: white;
-    font-style: oblique;
+.last__message {
+  font-size: 2rem;
+  color: white;
+  font-style: oblique;
+  position: absolute;
+  bottom: 2px;
 }
 
-.last__message span{
-    color: rgb(219 39 119);
+.last__message span {
+  color: rgb(219 39 119);
 }
 
-
-@media(max-width:1200px){
-    .contact__box{
-        width: 60vw;
-    }
-    /* .contact__screen{
+@media (max-width: 1200px) {
+  .contact__box {
+    width: 60vw;
+  }
+  /* .contact__screen{
         margin-top: -8rem;
       } */
-      /* .last__message{
+  /* .last__message{
         position: absolute;
         bottom: 27%;
         right: 50%;
         font-size: 2rem;
       } */
-    
+  .last__message {
+    bottom: -2px;
+  }
 }
 
-@media(max-width: 992px){
-    .contact__box{
-        width: 70vw;
-    }
-    .manual__email {
-        font-size: 1rem;
-      }
-      .contact__screen{
-        flex-direction: column;
-        margin-top: 1rem;
-      }
-      /* .last__message{
+@media (max-width: 992px) {
+  .contact__box {
+    width: 70vw;
+  }
+  .manual__email {
+    font-size: 1rem;
+  }
+  .contact__screen {
+    flex-direction: column;
+  }
+  /* .last__message{
         position: absolute;
         bottom: 27%;
         right: 50%;
         font-size: 1.8rem;
       } */
-      .last__message{
-        margin-top: 0;
-      }
+  .last__message {
+    bottom: 180px;
+    left: 80px;
+    word-wrap: break-word;
+    width: 300px;
+  }
 }
-
 
 @media (max-width: 768px) {
   .contact__box {
     width: 80vw;
   }
-  .manual__email{
+  .manual__email {
     font-size: 1.2rem;
+  }
+  .contact h2 {
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
   }
   /* .last__message{
     position: absolute;
@@ -179,30 +183,33 @@
     right: 50%;
     font-size: 2rem;
   } */
-  .contact__screen{
-    margin-top: 1rem;
+  .contact__screen {
+    /* margin-top: 1rem; */
     flex-direction: column;
+  }
+  .last__message {
+    bottom: 170px;
+    left: 4px;
+    width: 270px;
   }
 }
 
-@media(max-width: 512px) {
-    .contact__box {
-        width: 90vw;
-      }
-      .manual__email {
-        font-size: 0.9rem;
-      }
-      
-      .last__message{
-        margin-bottom: 1rem;
-      }
+@media (max-width: 512px) {
+  .contact__box {
+    width: 90vw;
+  }
+  .manual__email {
+    font-size: 0.9rem;
+  }
 
-      /* .last__message{
+  .last__message {
+    margin-bottom: 1rem;
+  }
+
+  /* .last__message{
         position: absolute;
         bottom: 27%;
         right: 45%;
         font-size: 1.5rem;
       } */
-
-
 }

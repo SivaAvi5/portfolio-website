@@ -1,26 +1,24 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
-html, body {
-  height: 100%;
-  font-family: sans-serif,Arial;
+.app {
+  background-color: #232741;
 }
 
-.screen{
+html,
+body {
+  height: 100%;
+  font-family: sans-serif, Arial;
+}
+
+.screen {
   display: flex;
   justify-content: center;
 }
 
-.pages{
+.pages {
   position: relative;
   width: 90%;
 }
-
-
-
-
-
